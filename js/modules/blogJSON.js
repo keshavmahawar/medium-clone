@@ -1,6 +1,6 @@
 let blog = {
 	blogArray: {
-		1: {
+		0: {
 			heading: "Test Heading 1",
 			content: "content 1",
             date: "1594830609887",
@@ -19,12 +19,12 @@ let blog = {
 				},
 			],
 		},
-		2: {
+		1: {
 			heading: "Test Heading 2",
 			content: "content 2",
             date: "1594830609887",
             creatorId: "kesMahawar",
-			tags: ["tech", "medic"],
+			tags: ["tech"],
 			comments: [
 				{
 					userId: "kesMahawar",
@@ -42,3 +42,5 @@ let blog = {
 	blogArrayLength: 2,
 	blogTags: ["tech", "medics"],
 };
+
+localStorage.setItem("blog",JSON.stringify(blog))
