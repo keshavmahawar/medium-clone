@@ -34,32 +34,42 @@
                 padding: 8px 30px;
 				font-size: 15px;
 				font-weight: 300;
+				width: 150px;
             }
 
             #navbar {
-                height: 76px;
+                min-height: 76px;
                 background-color: rgba(255, 255, 255, 0.9);
             }
 
 			#navbar > span {
-                margin-left: 130px;
+                margin-left: 10%;
                 font-weight: bold;
                 font-size: 30px;
-                
-            }
+			}
+			@media (max-width: 765px) {
+				#dummyDivForMargin {
+					margin-top: 220px;
+				}
+			}
+
+			@media (min-width: 765px) {
+				#dummyDivForMargin {
+					margin-top: 80px;
+				}
+			}
 
             #navbar > ul {
-                margin-right: 130px;
+				margin-right: 10%;
+				margin-left: 10%;
 			}
+			
 		</style>
 	</head>
 	<body>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse fixed-top navbar-collapse justify-content-end" id="navbar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="fixed-top navbar-collapse justify-content-end pb-4 pb-md-0" id="navbar">
                 <span class="navbar-brand font-weight-bold mr-auto font-heading-custom">Medium Clone</span>
                 <ul class="nav navbar-nav  mt-2 mt-lg-0">
                     <li class="nav-item">
@@ -68,12 +78,13 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark mr-4" href="loginRegistration.html">Sign in</a>
                     </li>
-                    <a class="btn btn-lg big-button text-white background-success-custom align-center small-button" href="loginRegistration.html">Get Started</a>
+                    <a class="btn btn-lg big-button text-white background-success-custom align-center small-button mt-3 mt-md-0" href="loginRegistration.html">Get Started</a>
                 </ul>
             </div>
 		</nav>
 		
 		<div class="container">
+			<div id="dummyDivForMargin"></div>
 			<h1 class="font-heading-custom text-dark-custom text-center big-font">Dive deeper on topics that<br> matter to you.</h1>
 			<h2 class="font-text-custom text-dark-custom text-center medium-font">Select what you're into We'll help you find<br> great things to read.</h2>
 			<div class="m-3 d-flex tag-font flex-wrap justify-content-center">
