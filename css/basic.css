@@ -1,0 +1,21 @@
+.text-dark-custom {
+	color: #292929 !important;
+}
+.text-light-custom {
+	color: #7d7976 !important;
+}
+.background-black-custom {
+	background-color: #000000;
+}
+.background-light-custom {
+	background-color: #7d7976;
+}
+.background-success-custom {
+	background-color: #7d7976;
+}
+.font-heading-custom {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.font-text-custom {
+	font-family: sans-serif, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana;
+}
