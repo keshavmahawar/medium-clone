@@ -7,14 +7,20 @@
 .background-black-custom {
 	background-color: #000000;
 }
+.background-dark-custom {
+	background-color: #1e1b1d;
+}
 .background-light-custom {
-	background-color: #7d7976;
+	background-color: #f2f2f2;
 }
 .background-success-custom {
-	background-color: #7d7976;
+	background-color: #51a97d !important;
 }
 .font-heading-custom {
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body{
+	font-family: sans-serif, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana;
 }
 .font-text-custom {
 	font-family: sans-serif, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana;
