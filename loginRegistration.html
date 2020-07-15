@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Start</title>
     <link rel="stylesheet" href="css/loginRegistration.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/basic.css">
@@ -22,17 +22,17 @@
                                 </a>
                             </div>
                             <div class="col-12 mt-3 text-align-center">
-                                <h3 class="mb-4 font-heading-custom font-weight-bold">Sign in with email</h3>
+                                <h3 class="mb-4 font-heading-custom font-weight-bold">Sign in with User Id</h3>
                                 <p class="font-text-custom">Enter the email address associated with<br> your account, and we'll send a magic link<br> to your inbox</p>
-                                <label for="email" class="mt-4 font-text-custom">Your email</label>
+                                <label for="userIdL" class="mt-4 font-text-custom">Your User Id</label>
                                 <br>
-                                <input id="email" type="text" class="input-email text-align-center mt-1">
+                                <input id="userIdL" type="text" class="input-email text-align-center mt-1">
                                 <br>
-                                <label for="password" class="mt-4 font-text-custom">Your password</label>
+                                <label for="passwordL" class="mt-4 font-text-custom">Your password</label>
                                 <br>
-                                <input id="password" type="password" class="input-email text-align-center mt-1">
+                                <input id="passwordL" type="password" class="input-email text-align-center mt-1">
                                 <br>
-                                <button class="mt-5 button-continue font-text-custom">Continue</button>
+                                <button class="mt-5 button-continue font-text-custom" id="logInBtn">Sing in</button>
                                 <p class="mt-4 mb-5 font-text-custom">No account? <a href="#" class="a-link" type="button" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Create one</a></p>
                             </div>
                         </div>
@@ -55,19 +55,19 @@
                             <div class="col-12 mt-4 text-align-center">
                                 <h3 class="mb-4 font-heading-custom font-weight-bold">Sign up with email</h3>
                                 <p class="font-text-custom">Enter your email address to create an<br>account</p>
-                                <label for="email" class="mt-4 font-text-custom">Your Name</label>
+                                <label for="nameC" class="mt-4 font-text-custom">Your Name</label>
                                 <br>
-                                <input id="email" type="text" class="input-email text-align-center mt-1">
+                                <input id="nameC" type="text" class="input-email text-align-center mt-1">
                                 <br>
-                                <label for="email" class="mt-4 font-text-custom">Your email</label>
+                                <label for="userIdC" class="mt-4 font-text-custom">Your User Id</label>
                                 <br>
-                                <input id="email" type="text" class="input-email text-align-center mt-1">
+                                <input id="userIdC" type="text" class="input-email text-align-center mt-1">
                                 <br>
-                                <label for="password" class="mt-4 font-text-custom">Your password</label>
+                                <label for="passwordC" class="mt-4 font-text-custom">Your password</label>
                                 <br>
-                                <input id="password" type="password" class="input-email text-align-center mt-1">
+                                <input id="passwordC" type="password" class="input-email text-align-center mt-1">
                                 <br>
-                                <button class="mt-5 button-continue font-text-custom">Continue</button>
+                                <button class="mt-5 button-continue font-text-custom" id="signUpBtn">Sing up</button>
                                 <p class="mt-4 font-text-custom">Already have an account? <a href="#" class="a-link" type="button" data-toggle="modal" data-target="#signIn" data-dismiss="modal">Sign in</a></p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
         </div>
     </div>
 
-    <script src="js/loginRegistration.js"></script>
+    <script type="module" src="js/loginRegistration.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
