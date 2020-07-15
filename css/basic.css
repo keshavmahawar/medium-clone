@@ -28,3 +28,37 @@ body{
 .font-text-custom {
 	font-family: sans-serif, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana;
 }
+
+.small-button {
+	padding: 8px 30px;
+	font-size: 15px;
+	font-weight: 300;
+	width: 150px;
+}
+
+#navbar {
+	min-height: 76px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#navbar > span {
+	margin-left: 10%;
+	font-weight: bold;
+	font-size: 30px;
+}
+@media (max-width: 765px) {
+	#dummyDivForMargin {
+		margin-top: 220px;
+	}
+}
+
+@media (min-width: 765px) {
+	#dummyDivForMargin {
+		margin-top: 80px;
+	}
+}
+
+#navbar > ul {
+	margin-right: 10%;
+	margin-left: 10%;
+}

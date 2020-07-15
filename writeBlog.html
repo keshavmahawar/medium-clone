@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/basic.css" rel="stylesheet">
+    <link href='https://css.gg/user.css' rel='stylesheet'>
+    <style>
+        .input-title {
+            width: 100%;
+            height: 70px;
+            font-size: 40px;
+            border:none;
+            outline: none;
+            padding-left: 10px;
+            color: #292929;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .input-body {
+            width: 100%;
+            height: 500px;
+            font-size: 23px;
+            border:none;
+            outline: none;
+            padding-left: 10px;
+            color: #292929;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ::placeholder {
+            color: #7d7976
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="modal fade" id="tags" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="text-dark-custom">Add or change tags (up to 5)<br> so readers know what your story is about.</h6>
+                                <textarea class="input-title" style="border-bottom: 1px solid black;" autofocus></textarea>
+                                <button class="btn btn-lg big-button text-white background-success-custom align-center small-button mt-3">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="fixed-top navbar-collapse justify-content-end pb-4 pb-md-0 mt-2" id="navbar">
+            <span class="navbar-brand font-weight-bold mr-auto font-heading-custom">Medium Clone</span>
+            <ul class="nav navbar-nav  mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <button class="btn btn-lg big-button text-white background-success-custom align-center small-button mt-3 mt-md-0" data-toggle="modal" data-target="#tags" type="button">Publish</button>
+                </li>
+                <li class="nav-item">
+                    <h3 class="mt-2 ml-5 d-sm-none d-md-block text-dark-custom font-heading-custom font-weight-bold">Manideep</h3>
+                </li>
+                <i class="gg-user mt-3 ml-4 d-sm-none d-md-block"></i>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div id="dummyDivForMargin"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <input class="input-title" type="text" placeholder="Title">
+            </div>
+            <div class="col-10 offset-1">
+                <textarea class="input-body" type="textarea" placeholder="Tell your story..." autofocus=true></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
