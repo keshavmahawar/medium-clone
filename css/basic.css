@@ -4,6 +4,9 @@
 .text-light-custom {
 	color: #7d7976 !important;
 }
+.text-success-custom {
+	color: #51a97d !important;
+}
 .background-black-custom {
 	background-color: #000000;
 }
