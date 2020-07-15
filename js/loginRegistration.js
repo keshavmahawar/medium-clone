@@ -1,3 +1,3 @@
 window.onload = function() {
-    console.log("hello")
+    $('#signIn').modal('show')
 }
