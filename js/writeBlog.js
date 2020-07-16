@@ -1,6 +1,7 @@
 import Blog from './modules/blogModule.js'
+import displayUserName from './modules/navbarModule.js'
 
-console.log(Blog)
+console.log(displayUserName)
 
 window.onload = function() {
     const publishBtn = document.getElementById('publishBtn')
