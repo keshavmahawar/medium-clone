@@ -35,6 +35,12 @@ body{
 	font-weight: 300;
 	width: 150px;
 }
+.remove-link-format{
+    text-decoration: none;
+}
+.remove-link-format:hover{
+    text-decoration: none;
+}
 
 #navbar {
 	min-height: 76px;

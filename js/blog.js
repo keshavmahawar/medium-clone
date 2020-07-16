@@ -9,8 +9,10 @@ function renderBlog(blogId){
     setLoading("creatorNameBottom")
     let blog = new Blog(blogId)
     let {heading,content,creatorId,date} = blog.getBlogJson()
+    
     date = new Date(parseInt(date)).toDateString()
-
+    creatorId = User.getDirectName( creatorId )
+    
     $set("blogHeading").append(heading)
     $set("blogContent").append(content)
     $set("creatorNameTop").append(creatorId, createDiv("text-light-custom small",date))

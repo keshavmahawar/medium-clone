@@ -31,6 +31,7 @@ class User {
     }
 
     static getDirectName(userId) {
+        this.users = JSON.parse(localStorage.getItem('users'))
         return this.users[userId].name
     }
 

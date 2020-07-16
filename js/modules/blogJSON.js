@@ -4,7 +4,7 @@ let blog = {
 			heading: "Test Heading 1",
 			content: "content 1",
             date: "1594830609887",
-            creatorId: "kesMahawar",
+            creatorId: "keshav123",
 			tags: ["tech", "medic"],
 			comments: [
 				{
@@ -23,7 +23,7 @@ let blog = {
 			heading: "Test Heading 2",
 			content: "content 2",
             date: "1594830609887",
-            creatorId: "kesMahawar",
+            creatorId: "keshav123",
 			tags: ["tech"],
 			comments: [
 				{
