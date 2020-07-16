@@ -47,7 +47,11 @@ class Blog {
 		let tagBlogArr = [];
 
 		for (let i in arr) {
-			if (arr[i].tags.includes(tag)) tagBlogArr.push(arr[i]);
+            if (arr[i].tags.includes(tag)){
+                let blogTemp = arr[i];
+                blogTemp["blogId"] = i
+                tagBlogArr.push(blogTemp);
+            }
 		}
 
 		return tagBlogArr;

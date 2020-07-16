@@ -5,7 +5,7 @@ let blog = {
 			content: "content 1",
             date: "1594830609887",
             creatorId: "keshav123",
-			tags: ["tech", "medic"],
+			tags: ["tech", "medics"],
 			comments: [
 				{
 					userId: "kesMahawar",
