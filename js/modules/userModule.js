@@ -1,6 +1,6 @@
 
 class User {
-    constructor(userId, password, name=null) {
+    constructor(userId, password, name) {
         this.userId = userId
         this.password = password
         this.name = name
@@ -13,8 +13,10 @@ class User {
 
         if (flag) {
             localStorage.setItem("activeUser", `${this.users[this.userId].name}`)
+            console.log("success")
             return this.userId
         } else {
+            console.log("fail")
             return 0
         }
     }
