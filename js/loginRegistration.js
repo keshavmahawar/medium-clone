@@ -12,9 +12,13 @@ function tryLogIn() {
     const userId = document.querySelector("#userIdL")
     const password = document.querySelector("#passwordL")
     const user = new User(userId.value, password.value)
-    user.login()
-    userId.value = ""
-    password.value = ""
+
+    if (user.login()) {
+        location.replace("/index.html")
+    } else {
+        userId.style.color = "red"
+        password.style.color = "red"
+    }
 }
 
 function createUser() {
