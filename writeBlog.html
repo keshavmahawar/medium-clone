@@ -46,8 +46,8 @@
                         <div class="row">
                             <div class="col-12">
                                 <h6 class="text-dark-custom">Add or change tags (up to 5)<br> so readers know what your story is about.</h6>
-                                <textarea class="input-title" style="border-bottom: 1px solid black;" autofocus></textarea>
-                                <button class="btn btn-lg big-button text-white background-success-custom align-center small-button mt-3">Publish</button>
+                                <textarea class="input-title" style="border-bottom: 1px solid black;"  id="tagsList"></textarea>
+                                <button class="btn btn-lg big-button text-white background-success-custom align-center small-button mt-3" id="publishBtn" data-dismiss="modal">Publish</button>
                             </div>
                         </div>
                     </div>
@@ -77,14 +77,15 @@
     <div class="container">
         <div class="row">
             <div class="col-10 offset-1">
-                <input class="input-title" type="text" placeholder="Title">
+                <input class="input-title" type="text" placeholder="Title" id="title">
             </div>
             <div class="col-10 offset-1">
-                <textarea class="input-body" type="textarea" placeholder="Tell your story..." autofocus=true></textarea>
+                <textarea class="input-body" type="textarea" placeholder="Tell your story..." autofocus=true id="content"></textarea>
             </div>
         </div>
     </div>
-
+    
+    <script type="module" src="./js/writeBlog.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
