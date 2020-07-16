@@ -1,5 +1,7 @@
 import Blog from "./modules/blogModule.js";
+import navLoad from "./modules/navbarModule.js";
 import {$set,setLoading, createDiv} from "./modules/helperFunctions.js"
+
 
 function renderTags(){
     setLoading("tags")
@@ -22,6 +24,7 @@ function renderTags(){
 }
 
 window.addEventListener('load', () => {
+    navLoad()
     renderTags()
     // console.log()
 });
