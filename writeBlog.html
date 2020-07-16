@@ -38,6 +38,26 @@
 
 <body>
 
+
+    <div class="modal fade" id="alert" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <a type="button" class="close" aria-label="Close" href="index.html">
+                <span aria-hidden="true">&times;</span>
+            </a>
+            </div>
+            <div class="modal-body">
+                Let me know where to store your blog.
+            </div>
+            <div class="modal-footer">
+            <a type="button" class="btn btn-primary" href="loginRegistration.html">Sign In</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="tags" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
@@ -58,7 +78,7 @@
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="fixed-top navbar-collapse justify-content-end pb-4 pb-md-0 mt-2" id="navbar">
-            <span class="navbar-brand font-weight-bold mr-auto font-heading-custom">Medium Clone</span>
+            <a class="navbar-brand font-weight-bold mr-auto font-heading-custom" href="index.html">Medium Clone</a>
             <ul class="nav navbar-nav  mt-2 mt-lg-0">
                 <li class="nav-item">
                     <button class="btn btn-lg big-button text-white background-success-custom align-center small-button mt-3 mt-md-0" data-toggle="modal" data-target="#tags" type="button">Publish</button>
@@ -83,6 +103,8 @@
             </div>
         </div>
     </div>
+
+
     
     <script type="module" src="./js/writeBlog.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
