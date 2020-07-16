@@ -78,3 +78,4 @@ export default Blog;
 
 // let test4 = new Blog().getBlogsByTag("tech");
 // console.log(test4);
+
