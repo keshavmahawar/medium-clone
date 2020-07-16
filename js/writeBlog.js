@@ -4,7 +4,6 @@ console.log(Blog)
 
 window.onload = function() {
     const publishBtn = document.getElementById('publishBtn')
-    console.log(publishBtn)
     publishBtn.addEventListener('click',publish)
 }
 
@@ -18,4 +17,5 @@ function publish() {
     // let test2 = new Blog("","test 3","xyz","kesMahawar",["tagNew","tech","test"]);
     let test2 = new Blog("",title.value,content.value,activeUser,tagsList);
     test2.createBlog();
+
 }

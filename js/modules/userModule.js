@@ -12,7 +12,7 @@ class User {
         flag = this.users[this.userId] && this.users[this.userId].password == this.password && true
 
         if (flag) {
-            localStorage.setItem("activeUser", `${this.users[this.userId].name}`)
+            localStorage.setItem("activeUser", `${this.userId}`)
             console.log("success")
             return this.userId
         } else {
