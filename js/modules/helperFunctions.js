@@ -2,7 +2,7 @@ function $get(id) {
 	return document.getElementById(id);
 }
 function $set(id) {
-	let element = $(id);
+	let element = $get(id);
 	element.innerText = "";
 	return element;
 }

@@ -53,8 +53,10 @@ class Blog {
 		return tagBlogArr;
 	}
 	getBlogJson() {
-		this.fetchBlog();
-		return { ...this };
+        this.fetchBlog();
+        let blogJson = { ...this }
+        delete blogJson.blogData
+		return blogJson;
 	}
 }
 
