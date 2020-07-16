@@ -1,5 +1,6 @@
 import User from "./modules/userModule.js";
 import Blog from "./modules/blogModule.js";
+import navLoad from "./modules/navbarModule.js";
 import {$get,$set,setLoading, createDiv} from "./modules/helperFunctions.js"
 
 function renderBlog(blogId){
@@ -26,6 +27,7 @@ function renderBlog(blogId){
 }
 
 window.addEventListener('load', () => {
+    navLoad()
     const urlParameters = new URLSearchParams( location.search )
     const blogId = urlParameters.get("blogId")
     renderBlog(blogId)

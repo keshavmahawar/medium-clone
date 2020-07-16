@@ -1,7 +1,8 @@
-
+import navLoad from "./modules/navbarModule.js";
 import Blog from './modules/blogModule.js'
 
 window.onload = function () {
+    navLoad()
     const urlParameters = new URLSearchParams( location.search )
     const tag = urlParameters.get("tag")
     renderBlogs(tag)

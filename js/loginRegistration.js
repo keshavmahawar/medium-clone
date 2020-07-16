@@ -1,6 +1,7 @@
 import User from "./modules/userModule.js"
 
 window.onload = function() {
+    if(User.checkLogin()) window.location = "index.html"
     $('#signIn').modal('show')
     const logInBtn = document.querySelector("#logInBtn")
     logInBtn.addEventListener('click', tryLogIn)

@@ -1,11 +1,12 @@
 import Blog from './modules/blogModule.js'
-import displayUserName from './modules/navbarModule.js'
+import navLoad from "./modules/navbarModule.js";
 import User from "./modules/userModule.js"
+
 
 console.log(User)
 
 window.onload = function() {
-
+    navLoad()
     if (!User.checkLogin()) {
         $('#alert').modal('show')
     }
