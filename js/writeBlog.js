@@ -1,9 +1,15 @@
 import Blog from './modules/blogModule.js'
 import displayUserName from './modules/navbarModule.js'
+import User from "./modules/userModule.js"
 
-console.log(displayUserName)
+console.log(User)
 
 window.onload = function() {
+
+    if (!User.checkLogin()) {
+        $('#alert').modal('show')
+    }
+    
     const publishBtn = document.getElementById('publishBtn')
     publishBtn.addEventListener('click',publish)
 }
@@ -18,5 +24,4 @@ function publish() {
     // let test2 = new Blog("","test 3","xyz","kesMahawar",["tagNew","tech","test"]);
     let test2 = new Blog("",title.value,content.value,activeUser,tagsList);
     test2.createBlog();
-
 }
