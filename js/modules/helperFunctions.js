@@ -1,4 +1,4 @@
-function $(id) {
+function $get(id) {
 	return document.getElementById(id);
 }
 function $set(id) {
@@ -27,4 +27,4 @@ function createDiv(divClass, ...args) {
 	return div;
 }
 
-export { $, $set, setLoading, createEle, createImage, createDiv };
+export { $get, $set, setLoading, createEle, createImage, createDiv };
