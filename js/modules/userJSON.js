@@ -1,23 +1,20 @@
-
 let users = {
     manideep39: {
         password: "abcd",
-        name: "Manideep"
+        name: "Manideep",
     },
     keshav123: {
         password: "dcba",
-        name: "Keshav"
+        name: "Keshav",
     },
     aayushi: {
         password: "abcd",
-        name: "Aayushi"
+        name: "Aayushi",
     },
     arjun: {
         password: "dcba",
-        name: "Arjun"
-    }
-}
+        name: "Arjun",
+    },
+};
 
-window.onload = function() {
-    localStorage.setItem("users", JSON.stringify(users))
-}
+export default users;

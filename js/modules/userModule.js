@@ -1,54 +1,56 @@
+import userJSON from "./userJSON.js";
 
 class User {
     constructor(userId, password, name) {
-        this.userId = userId
-        this.password = password
-        this.name = name
-        this.users = JSON.parse(localStorage.getItem('users'))
+        this.userId = userId;
+        this.password = password;
+        this.name = name;
+        let localStorageData = localStorage.getItem("users");
+        this.users = localStorageData ? JSON.parse(localStorageData) : userJSON;
     }
 
     login() {
-        let flag = false
-        flag = this.users[this.userId] && this.users[this.userId].password == this.password && true
+        let flag = false;
+        flag =
+            this.users[this.userId] &&
+            this.users[this.userId].password == this.password &&
+            true;
 
         if (flag) {
-            localStorage.setItem("activeUser", `${this.userId}`)
-            console.log("success")
-            return this.userId
+            localStorage.setItem("activeUser", `${this.userId}`);
+            return this.userId;
         } else {
-            console.log("fail")
-            return 0
+            return 0;
         }
     }
 
     create() {
-        this.users[this.userId] = {password: this.password, name: this.name}
-        localStorage.setItem("users", JSON.stringify(this.users))
+        this.users[this.userId] = { password: this.password, name: this.name };
+        localStorage.setItem("users", JSON.stringify(this.users));
     }
 
     getDetails(userId) {
-        return { name: this.users[userId].name }
+        return { name: this.users[userId].name };
     }
 
     static getDirectName(userId) {
-        this.users = JSON.parse(localStorage.getItem('users'))
-        return this.users[userId].name
+        let localStorageData = localStorage.getItem("users");
+        this.users = localStorageData ? JSON.parse(localStorageData) : userJSON;
+        return this.users[userId].name;
     }
 
     static checkLogin() {
-        let activeUser = localStorage.getItem("activeUser")
+        let activeUser = localStorage.getItem("activeUser");
 
         if (activeUser) {
-            return activeUser
+            return activeUser;
         }
 
-        return false
+        return false;
     }
 }
 
-window.onload = function() {
-
-}
+window.onload = function () {};
 
 // *************** User class example *****************
 // let user1 = new User("keshav123", "dcba")
@@ -59,4 +61,4 @@ window.onload = function() {
 
 // console.log(User.getDirectName("aayushi113"))
 
-export default User
+export default User;
