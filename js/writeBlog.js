@@ -32,4 +32,5 @@ function publish() {
         tagsList
     );
     newBlog.createBlog();
+    window.location = "index.html";
 }
